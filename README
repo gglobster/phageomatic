@@ -1,0 +1,14 @@
+##############################################################################
+### PhageOMatic v. 0.1                                                     ###
+### Copyright 2011 Geraldine A. Van der Auwera                             ###
+##############################################################################
+
+This project consists of a library of packages and a main script that can be
+run as a pipeline. The pipeline script is designed to run quality control
+and custom filtering on Illumina data, perform assembly and identify contigs
+of interest based on COG keywords.
+
+The primary application it was designed for is to identify plasmid contigs in
+unfinished microbial genomes and producing preliminary assemblies.
+
+As of 12 Sept 2011 the project is in active development.
