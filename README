@@ -1,5 +1,5 @@
 ##############################################################################
-### PhageOMatic v. 0.1                                                     ###
+### PhageOMatic v. 0.2                                                     ###
 ### Copyright 2011 Geraldine A. Van der Auwera                             ###
 ##############################################################################
 
@@ -11,4 +11,7 @@ of interest based on COG keywords.
 The primary application it was designed for is to identify plasmid contigs in
 unfinished microbial genomes and producing preliminary assemblies.
 
-As of 12 Sept 2011 the project is in active development.
+STATUS: The code is operational but requires setting up some files and config
+parameters manually. This procedure is not yet described in the documentation. 
+
+As of 15 Oct 2011 development is on hold.
