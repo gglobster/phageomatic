@@ -4,20 +4,19 @@ from libs.ngs_process import simple_q2a, trim_illumina
 from libs.chop_block import chop_genome, chop_multifasta
 from libs.blasting import mux_batch_blast
 from libs.parsing import glomp_blast_out, glomp_good_reads, extract_read_sets
-from libs.config import datasets, references, directories, bin_types
+from config import datasets, references, directories, bin_types
 from libs.contigs_process import batch_contig_annot
 
-
-if len(argv) > 1 | argv[1] == '-h':
-    print "Basic usage: \n", \
-          "$ python main_script.py [step#]\n", \
-          "For better results, run from within iPython."
-    exit()
-
-print "##################################################\n", \
+print "\n", \
+      "##################################################\n", \
       "### PhageOMatic v. 0.1                         ###\n", \
       "### Copyright 2011 Geraldine A. Van der Auwera ###\n", \
       "##################################################\n", \
+
+if len(argv) > 1 and argv[1] == '-h':
+    print "Basic usage: \n", \
+          "$ python main_script.py [step#]\n"
+    exit()
 
 if len(argv) < 2:
     step = 0
@@ -103,4 +102,4 @@ if step is 7:
     step +=1
 
 if step > 7:
-    print "Error: step number is too high!"
+    print "\n### Nothing more to do! ###\n"
